@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rar Accessories</title>
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 36px;
+      color: #00ffff;
+      animation: fadeInDown 1s ease;
+    }
+
+    .top-bar {
+      text-align: center;
+      margin: 20px auto;
+    }
+
+    .top-bar input[type="search"] {
+      padding: 8px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: none;
+      margin-right: 10px;
+    }
+
+    .submit-btn {
+      background-color: #00ffff;
+      color: black;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    .submit-btn:hover {
+      background-color: #00cccc;
+      transform: scale(1.05);
+    }
+
+    .add-payment {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .add-payment a button {
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    .add-payment a button:hover {
+      background-color: #00ffff;
+      color: black;
+      transform: scale(1.05);
+    }
+
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      margin: 40px auto;
+      padding: 0 20px;
+      max-width: 800px;
+    }
+
+    .img-box {
+      width: 100%;
+      max-width: 450px;
+      background-color: #111;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 1.2s ease;
+    }
+
+    .img-box:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.25);
+    }
+
+    .img-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: filter 0.3s ease;
+    }
+
+    .img-box:hover img {
+      filter: brightness(1.2) contrast(1.1);
+    }
+
+    .img-box p {
+      margin: 0;
+      padding: 10px;
+      background-color: #222;
+    }
+
+    .img-box button {
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    .img-box button:hover {
+      background-color: #00ffff;
+      color: black;
+      transform: scale(1.05);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .car-icon {
+      position: fixed;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 120px;
+      opacity: 0.2;
+      animation: float 3s ease-in-out infinite;
+      z-index: 0;
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(-50%) translateX(0);
+      }
+
+      50% {
+        transform: translateY(-50%) translateX(10px);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- SVG رسمة عربية -->
+  <svg class="car-icon" viewBox="0 0 512 512" fill="#00ffff">
+    <path
+      d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32zM160 352c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm192 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z" />
+  </svg>
+
+  <h1><i>Rar Accessories</i></h1>
+
+  <div class="top-bar">
+    <input id="Search" type="search" placeholder="Search here" required>
+    <button type="submit" class="submit-btn">Submit</button>
+  </div>
+
+  <div class="add-payment">
+    <a href="buy.html"><button>Add Payment Method</button></a>
+  </div>
+
+  <div class="gallery">
+
+    <div class="img-box">
+      <a href="screen.html">
+        <img src="download (50).jpeg" alt="Car Screen">
+      </a>
+      <p><a href="screen.html"><button>Car Screen</button></a></p>
+    </div>
+
+    <div class="img-box">
+      <a href="shifter.html">
+        <img src="جير6.jpeg" alt="Shifter">
+      </a>
+      <p><a href="shifter.html"><button>Shifter</button></a></p>
+    </div>
+
+    <div class="img-box">
+      <a href="spoilr.html">
+        <img src="63c4d4eb5892536e3321d7d3-mophorn-single-deck-gt-wing-car-spoiler.jpg" alt="Spoiler">
+      </a>
+      <p><a href="spoilr.html"><button>Spoiler</button></a></p>
+    </div>
+
+    <div class="img-box">
+      <a href="turbo.html">
+        <img src="e6258af8b61687627d23c61640933e8f94f4a9f6.jpg" alt="Turbo">
+      </a>
+      <p><a href="turbo.html"><button>Turbo</button></a></p>
+    </div>
+
+    <div class="img-box">
+      <a href="gear_box.html">
+        <img src="download (7).jpeg" alt="Gear Box">
+      </a>
+      <p><a href="gear_box.html"><button>Gear Box</button></a></p>
+    </div>
+
+    <div class="img-box">
+      <a href="steerng.html">
+        <img src="images (7).jpeg" alt="Steering Wheel">
+      </a>
+      <p><a href="steerng.html"><button>Steering Wheel</button></a></p>
+    </div>
+
+    <div class="img-box">
+      <a href="sportSeet.html">
+        <img src="download (19).jpeg" alt="Sport Seat">
+      </a>
+      <p><a href="sportSeet.html"><button>Sport Seat</button></a></p>
+    </div>
+
+    <div class="img-box">
+      <a href="engine.html">
+        <img src="download (22).jpeg" alt="Engine">
+      </a>
+      <p><a href="engine.html"><button>Engine</button></a></p>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

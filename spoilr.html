@@ -1,0 +1,113 @@
+\
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Spoiler Gallery</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #00ffff;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .img-box {
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+            background-color: #111;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .img-box:hover {
+            transform: scale(1.02);
+        }
+
+        .img-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid #555;
+        }
+
+        .img-box p {
+            margin-top: 12px;
+        }
+
+        .img-box a button {
+            background-color: #00ffff;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .img-box a button:hover {
+            background-color: #0ff;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Spoiler Gallery</h1>
+
+    <div class="gallery">
+
+        <div class="img-box">
+            <img src="63c4d4eb5892536e3321d7d3-mophorn-single-deck-gt-wing-car-spoiler.jpg" alt="Spoiler 1">
+            <p><a href="buy.html?product=Spoiler1&price=900"><button>Buy Now! 900$</button></a></p>
+        </div>
+
+        <div class="img-box">
+            <img src="67421_4_238f.webp" alt="Spoiler 2">
+            <p><a href="buy.html?product=Spoiler2&price=800"><button>Buy Now! 800$</button></a></p>
+        </div>
+
+        <div class="img-box">
+            <img src="images (1).jpeg" alt="Spoiler 3">
+            <p><a href="buy.html?product=Spoiler3&price=600"><button>Buy Now! 600$</button></a></p>
+        </div>
+
+        <div class="img-box">
+            <img src="images (2).jpeg" alt="Spoiler 4">
+            <p><a href="buy.html?product=Spoiler4&price=500"><button>Buy Now! 500$</button></a></p>
+        </div>
+
+        <div class="img-box">
+            <img src="images (3).jpeg" alt="Spoiler 5">
+            <p><a href="buy.html?product=Spoiler5&price=400"><button>Buy Now! 400$</button></a></p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

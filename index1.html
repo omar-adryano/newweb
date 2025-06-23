@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rar Shope</title>
+    <link type="image" rel="icon" href="icon.png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #000000, #1a1a1a);
+            color: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #00ffff;
+            text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+            margin-top: 30px;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #333;
+            margin: 20px auto;
+            width: 70%;
+        }
+
+        label {
+            font-size: 18px;
+            color: #ccc;
+        }
+
+        input[type="email"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #222;
+            color: #fff;
+            margin-left: 10px;
+        }
+
+        input::placeholder {
+            color: #999;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            margin: 40px auto;
+            max-width: 1200px;
+        }
+
+        .img-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .img-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #0ff3;
+        }
+
+        .img-box img {
+            width: 100%;
+            border-radius: 12px;
+            border: 2px solid #555;
+        }
+
+        .img-box p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #ccc;
+        }
+
+        /* أزرار عامة */
+        button {
+            background: linear-gradient(to right, #333, #222);
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 5px #0ff3;
+        }
+
+        button:hover {
+            background: linear-gradient(to right, #555, #333);
+            transform: scale(1.05);
+            box-shadow: 0 0 15px #0ff;
+        }
+
+        /* أزرار خاصة للشركات */
+        .btn-toyota:hover {
+            background: red;
+            box-shadow: 0 0 15px red;
+        }
+
+        .btn-lambo:hover {
+            background: yellow;
+            color: black;
+            box-shadow: 0 0 15px yellow;
+        }
+
+        .btn-mercedes:hover {
+            background: silver;
+            color: black;
+            box-shadow: 0 0 15px silver;
+        }
+
+        .btn-nissan:hover {
+            background: crimson;
+            box-shadow: 0 0 15px crimson;
+        }
+
+        .btn-bmw:hover {
+            background: #1a73e8;
+            box-shadow: 0 0 15px #1a73e8;
+        }
+
+        .about-btn {
+            margin-top: 30px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* زر البحث */
+        .submit-btn {
+            margin-left: 10px;
+        }
+
+        /* Fade in animation */
+        .gallery,
+        h1,
+        form,
+        hr,
+        .about-btn {
+            animation: fadeIn 1.2s ease forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1><i>Rar Shope</i></h1>
+    <hr>
+
+    <label for="Search">Search
+        <input required id="email" type="email" placeholder="Search here">
+        <button type="submit" class="submit-btn">بحث</button>
+    </label>
+
+    <br><br>
+    <hr><br>
+
+    <a href="sign.html"><button>Sign</button></a>
+    <a href="login.html"><button>Login</button></a>
+    <a href="addition.html"><button>Additions +18</button></a>
+
+    <br><br>
+
+    <div class="gallery">
+        <div class="img-box">
+            <a href="toyota.html">
+                <img src="download.png" alt="تويوتا">
+            </a>
+            <p><a href="toyota.html"><button class="btn-toyota">تويوتا</button></a></p>
+        </div>
+
+        <div class="img-box">
+            <a href="lamborginy.html">
+                <img src="lamborghini-new-logo-شعار-لامبورجيني-الجديد.webp" alt="لامبورجيني">
+            </a>
+            <p><a href="lamborginy.html"><button class="btn-lambo">لامبورجيني</button></a></p>
+        </div>
+
+        <div class="img-box">
+            <a href="مرسيدس.html">
+                <img src="/الشعار.webp" alt="مرسيدس">
+            </a>
+            <p><a href="مرسيدس.html"><button class="btn-mercedes">مرسيدس</button></a></p>
+        </div>
+
+        <div class="img-box">
+            <a href="نيسان.html">
+                <img src="/شعار.jpeg" alt="نيسان">
+            </a>
+            <p><a href="نيسان.html"><button class="btn-nissan">نيسان</button></a></p>
+        </div>
+
+        <div class="img-box">
+            <a href="bmw.html">
+                <img src="الشعار.jpg" alt="BMW">
+            </a>
+            <p><a href="bmw.html"><button class="btn-bmw">BMW</button></a></p>
+        </div>
+    </div>
+
+    <br>
+    <a href="Aboutme.html"><button class="about-btn">About me</button></a>
+
+</body>
+
+</html>

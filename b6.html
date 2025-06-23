@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>BMW Lounge Edition - الدفع</title>
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+      font-family: 'Segoe UI';
+      padding: 20px;
+      margin: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #e67e22;
+      margin-bottom: 10px;
+    }
+
+    .car-info {
+      max-width: 800px;
+      margin: 30px auto 50px auto;
+      padding: 20px;
+      background-color: #111;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(230, 126, 34, 0.4);
+    }
+
+    .car-info h2 {
+      color: #e67e22;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .car-info ul {
+      list-style: square;
+      padding-left: 25px;
+    }
+
+    .car-info ul li {
+      margin: 8px 0;
+      font-size: 15px;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 15px;
+      color: #f1c40f;
+    }
+
+    .form-container {
+      max-width: 500px;
+      margin: 30px auto;
+      background-color: #111;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(230, 126, 34, 0.2);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border-radius: 5px;
+      border: 1px solid #555;
+      background-color: #222;
+      color: white;
+    }
+
+    button {
+      margin-top: 25px;
+      width: 100%;
+      padding: 12px;
+      background-color: #e67e22;
+      color: black;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #f39c12;
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1><i>BMW Lounge Edition – VIP Style</i></h1>
+
+  <div class="car-info">
+    <h2>🛋️ Executive Rear Comfort</h2>
+    <ul>
+      <li>Engine: 4.0L Hybrid V8</li>
+      <li>Horsepower: 460 HP</li>
+      <li>Special: Rear Recliner Seats + Screens</li>
+      <li>Interior: Beige Leather + Wood Trim</li>
+      <li>Comfort: Electric Curtains + Massager Seats</li>
+      <li>Drive: AWD – Smooth & Silent</li>
+    </ul>
+    <div class="price">💰 Price: 11,300,000 جنيه مصري</div>
+  </div>
+
+  <div class="form-container">
+    <form>
+      <label for="cardNumber">Credit Card Number</label>
+      <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" required>
+
+      <label for="expiry">Expiry Date</label>
+      <input type="text" id="expiry" placeholder="MM/YY" required>
+
+      <label for="cvc">CVC / CVV</label>
+      <input type="text" id="cvc" placeholder="123" required>
+
+      <label for="cardName">Cardholder Name</label>
+      <input type="text" id="cardName" placeholder="John Doe" required>
+
+      <label for="address">Billing Address</label>
+      <input type="text" id="address" placeholder="123 Street, City" required>
+
+      <button type="submit">Confirm Payment</button>
+    </form>
+  </div>
+
+</body>
+
+</html>

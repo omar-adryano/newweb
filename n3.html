@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nissan GT-R Upgraded - الدفع</title>
+    <style>
+        body {
+            background-color: #000;
+            color: white;
+            font-family: 'Segoe UI';
+            padding: 20px;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #f39c12;
+            margin-bottom: 10px;
+        }
+
+        .car-info {
+            max-width: 800px;
+            margin: 30px auto 50px;
+            padding: 20px;
+            background-color: #111;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(243, 156, 18, 0.3);
+        }
+
+        .car-info h2 {
+            color: #f39c12;
+            text-align: center;
+        }
+
+        .car-info ul {
+            padding-left: 25px;
+            list-style: square;
+        }
+
+        .car-info ul li {
+            margin: 8px 0;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 15px;
+            color: #ffcc00;
+        }
+
+        .form-container {
+            max-width: 500px;
+            margin: 30px auto;
+            background-color: #111;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(243, 156, 18, 0.2);
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border-radius: 5px;
+            border: 1px solid #555;
+            background-color: #222;
+            color: white;
+        }
+
+        button {
+            margin-top: 25px;
+            width: 100%;
+            padding: 12px;
+            background-color: #f39c12;
+            color: black;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #f5b041;
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1><i>GT-R R35 – Performance Edition 💥</i></h1>
+
+    <div class="car-info">
+        <h2>🔥 Upgraded Monster</h2>
+        <ul>
+            <li>Engine: 3.8L Twin-Turbo (Upgraded Turbos)</li>
+            <li>Horsepower: 850 HP</li>
+            <li>0-100 km/h: 2.5 seconds</li>
+            <li>Top Speed: 340 km/h</li>
+            <li>Track-Tuned Suspension + Aero Kit</li>
+        </ul>
+        <div class="price">💰 Price: 7,900,000 جنيه مصري</div>
+    </div>
+
+    <div class="form-container">
+        <form>
+            <label for="cardNumber">Credit Card Number</label>
+            <input type="text" id="cardNumber" required>
+            <label for="expiry">Expiry Date</label>
+            <input type="text" id="expiry" required>
+            <label for="cvc">CVC / CVV</label>
+            <input type="text" id="cvc" required>
+            <label for="cardName">Cardholder Name</label>
+            <input type="text" id="cardName" required>
+            <label for="address">Billing Address</label>
+            <input type="text" id="address" required>
+            <button type="submit">Confirm Payment</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

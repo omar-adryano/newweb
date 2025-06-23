@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Page</title>
+    <style>
+        body {
+            background-color: #000;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #00ffff;
+            margin-top: 40px;
+            font-size: 32px;
+        }
+
+        .payment-container {
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #111;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.15);
+        }
+
+        label {
+            display: block;
+            margin: 18px 0 6px;
+            font-size: 14px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"] {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #333;
+            background-color: #222;
+            color: white;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+
+        input::placeholder {
+            color: #999;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            margin-top: 30px;
+            background-color: #00ffff;
+            color: #000;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #0ff;
+            transform: scale(1.03);
+        }
+
+        .note {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 13px;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Confirm Your Payment</h1>
+
+    <div class="payment-container">
+        <form>
+
+            <label for="cardNumber">Card Number</label>
+            <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" required>
+
+            <label for="cardName">Cardholder Name</label>
+            <input type="text" id="cardName" placeholder="Full name on card" required>
+
+            <label for="expiry">Expiry Date</label>
+            <input type="text" id="expiry" placeholder="MM/YY" required>
+
+            <label for="cvc">CVC / CVV</label>
+            <input type="text" id="cvc" placeholder="e.g. 123" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="you@example.com" required>
+
+            <label for="billing">Billing Address</label>
+            <input type="text" id="billing" placeholder="Street, City, Country" required>
+
+            <button type="submit">Pay Now</button>
+        </form>
+
+        <p class="note">Secure payment • No data will be stored</p>
+    </div>
+
+</body>
+
+</html>

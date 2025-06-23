@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <title>صفحة سوداء</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #00ffff;
+        }
+
+        hr {
+            width: 60%;
+            margin: 20px 0;
+            border: 1px solid #444;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #ccc;
+        }
+
+        form {
+            background-color: #111;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #0ff3;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #0ff;
+        }
+
+        input[type="text"],
+        input[type="type"],
+        input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            background-color: #222;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        input::placeholder {
+            color: #888;
+        }
+
+        input[type="submit"] {
+            background-color: #00ffff;
+            color: #000;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            padding: 12px;
+            width: 100%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0ff;
+        }
+
+        /* تنسيق إضافي لتوسيط العناصر داخل الفورم */
+        form div {
+            margin-bottom: 15px;
+        }
+
+        /* تصحيح لخطأ الكود: ladel → label، dev → div */
+    </style>
+</head>
+
+<body>
+
+    <h1><i>Welcome</i></h1>
+
+    <hr>
+    <p>Please Create an Account on Rar Store</p>
+
+    <form>
+        <div>
+            <label for="lastname">Your Last Name</label>
+            <input required type="text" id="lastname" placeholder="Enter your Name">
+        </div>
+
+        <div>
+            <label for="firstname">Your First Name</label>
+            <input required type="text" id="firstname" placeholder="Enter your First Name">
+        </div>
+
+        <div>
+            <label for="password">Password</label>
+            <input required id="password" type="text" placeholder="Enter your Password">
+        </div>
+
+        <div>
+            <label for="brthdate">Your Birthdate</label>
+            <input type="date" id="brthdate" name="brthdate">
+        </div>
+
+        <input type="submit" value="Create Account">
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Car Screens Shop</title>
+    <style>
+        body {
+            background-color: #000;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #00ffff;
+            margin-bottom: 40px;
+            font-size: 36px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .img-box {
+            background-color: #111;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .img-box:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+        }
+
+        .img-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .img-box p {
+            margin: 0;
+            padding: 15px;
+            background-color: #222;
+        }
+
+        .img-box a button {
+            background-color: #00ffff;
+            color: black;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .img-box a button:hover {
+            background-color: #0ff;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>💡 Car Screens Collection</h1>
+
+    <div class="gallery">
+
+        <div class="img-box">
+            <img src="61bQGpNG5sL.jpg" alt="Screen 1">
+            <p><a href="buy.html?product=Screen1&price=1000"><button>Buy Now! 1000$</button></a></p>
+        </div>
+
+        <div class="img-box">
+            <img src="829aaa06-979a-4a74-9aa6-07fdf03bd168-500x500-5IT6BEPuFbtkFfOmk67fTox2aqeGh6OAJQvzAZr1.webp"
+                alt="Screen 2">
+            <p><a href="buy.html?product=Screen2&price=2000"><button>Buy Now! 2000$</button></a></p>
+        </div>
+
+        <div class="img-box">
+            <img src="download (48).jpeg" alt="Screen 3">
+            <p><a href="buy.html?product=Screen3&price=1400"><button>Buy Now! 1400$</button></a></p>
+        </div>
+
+        <div class="img-box">
+            <img src="download (49).jpeg" alt="Screen 4">
+            <p><a href="buy.html?product=Screen4&price=1400"><button>Buy Now! 1400$</button></a></p>
+        </div>
+
+        <div class="img-box">
+            <img src="download (50).jpeg" alt="Screen 5">
+            <p><a href="buy.html?product=Screen5&price=1600"><button>Buy Now! 1600$</button></a></p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

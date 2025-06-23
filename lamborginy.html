@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lamborghini Cars Gallery</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #00ffff;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .img-box {
+            width: 100%;
+            max-width: 500px;
+            background-color: #111;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .img-box:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+        }
+
+        .img-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .img-box p {
+            margin: 0;
+            padding: 12px;
+            background-color: #222;
+        }
+
+        .img-box button {
+            background-color: #00ffff;
+            color: black;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .img-box button:hover {
+            background-color: #00bbbb;
+            transform: scale(1.05);
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1><i>Lamborghini Collection</i></h1>
+
+    <div class="gallery">
+
+        <div class="img-box">
+            <img src="2370223_0.jpg" alt="Lamborghini 1">
+            <p><a href="l1.html"><button>Buy now This car!</button></a></p>
+        </div>
+
+        <div class="img-box">
+            <img src="download (27).jpeg" alt="Lamborghini 2">
+            <p><a href="l2.html"><button>Buy now This car!</button></a></p>
+        </div>
+
+        <div class="img-box">
+            <img src="download (29).jpeg" alt="Lamborghini 3">
+            <p><a href="l3.html"><button>Buy now This car!</button></a></p>
+        </div>
+
+        <div class="img-box">
+            <img src="download (30).jpeg" alt="Lamborghini 4">
+            <p><a href="l4.html"><button>Buy now This car!</button></a></p>
+        </div>
+
+        <div class="img-box">
+            <img src="download (31).jpeg" alt="Lamborghini 5">
+            <p><a href="l5.html"><button>Buy now This car!</button></a></p>
+        </div>
+
+        <div class="img-box">
+            <img src="download (32).jpeg" alt="Lamborghini 6">
+            <p><a href="l6.html"><button>Buy now This car!</button></a></p>
+        </div>
+
+        <div class="img-box">
+            <img src="images (11).jpeg" alt="Lamborghini 7">
+            <p><a href="l7.html"><button>Buy now This car!</button></a></p>
+        </div>
+
+        <div class="img-box">
+            <img src="images (12).jpeg" alt="Lamborghini 8">
+            <p><a href="l8.html"><button>Buy now This car!</button></a></p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

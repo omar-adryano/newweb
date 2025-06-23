@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gear Box Gallery</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #00ffff;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .img-box {
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+            background-color: #111;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .img-box:hover {
+            transform: scale(1.02);
+        }
+
+        .img-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid #555;
+        }
+
+        .img-box p {
+            margin-top: 12px;
+        }
+
+        .img-box a button {
+            background-color: #00ffff;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .img-box a button:hover {
+            background-color: #0ff;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Gear Box Gallery</h1>
+
+    <div class="gallery">
+
+        <div class="img-box">
+            <img src="download (10).jpeg" alt="Gear Box 1">
+            <p><a href="buy.html"><button>Buy Now! 11000$</button></a></p>
+        </div>
+
+        <div class="img-box">
+            <img src="download (7).jpeg" alt="Gear Box 2">
+            <p><a href="buy.html"><button>Buy Now! 19000$</button></a></p>
+        </div>
+
+        <div class="img-box">
+            <img src="download (8).jpeg" alt="Gear Box 3">
+            <p><a href="buy.html"><button>Buy Now! 18000$</button></a></p>
+        </div>
+
+        <div class="img-box">
+            <img src="download (9).jpeg" alt="Gear Box 4">
+            <p><a href="buy.html"><button>Buy Now! 16000$</button></a></p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

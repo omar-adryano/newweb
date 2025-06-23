@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gear Sport Gallery</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            margin: 40px auto;
+            max-width: 800px;
+        }
+
+        .img-box {
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+            background-color: #111;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .img-box:hover {
+            transform: scale(1.02);
+        }
+
+        .img-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid #555;
+        }
+
+        .img-box p {
+            margin-top: 12px;
+        }
+
+        .img-box button {
+            background-color: #00ffff;
+            color: black;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .img-box button:hover {
+            background-color: #0ff;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="text-align:center; color:#00ffff;">Gear Sport Gallery</h1>
+
+    <div class="gallery">
+
+        <div class="img-box">
+            <img src="جير1.jpeg" alt="Gear 1">
+            <p><button>Buy Now! 790$</button></p>
+        </div>
+
+        <div class="img-box">
+            <img src="جير2.webp" alt="Gear 2">
+            <p><button>Buy Now! 800$</button></p>
+        </div>
+
+        <div class="img-box">
+            <img src="جير3.jpeg" alt="Gear 3">
+            <p><button>Buy Now! 800$</button></p>
+        </div>
+
+        <div class="img-box">
+            <img src="جير4.jpeg" alt="Gear 4">
+            <p><button>Buy Now! 890$</button></p>
+        </div>
+
+        <div class="img-box">
+            <img src="جير5.jpeg" alt="Gear 5">
+            <p><button>Buy Now! 1200$</button></p>
+        </div>
+
+        <div class="img-box">
+            <img src="جير6.jpeg" alt="Gear 6">
+            <p><button>Buy Now! 1000$</button></p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
